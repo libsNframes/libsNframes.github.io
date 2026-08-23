@@ -1,0 +1,22 @@
+{
+  "name": "Libs N Frameworks",
+  "short_name": "LibsNFrameworks",
+  "description": "A collection of libraries and frameworks.",
+  "start_url": "./webapp-KJhHGDhdDJHDUjen.html",
+  "display": "standalone",
+  "display_override": ["window-controls-override"],
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "img/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
