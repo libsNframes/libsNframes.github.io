@@ -1,4 +1,84 @@
-<link rel="icon" type="image/png" href="/img/favicon.png">
-<link rel="manifest" href="manifest.json">
-<title>Libs N' Frames</title>
-website
+<html>
+  <head>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>Libs&Frames</title>
+    <style>
+      body {
+        background: #fafafa;
+        color: #000;
+        font-family: Roboto, Arial, Verdana, sans-serif;
+        margin: 0px;
+        height: 500px;
+      }
+
+      .nav-bar {
+        visibility: hidden;
+        background: #ffffffaa;
+        height: 30px;
+        width: 500px;
+        position: sticky;
+        align-content: center;
+        padding: 5px 30px;
+        top: 5px;
+        border-radius: 20px;
+        border: 1.5px solid #00000009;
+        margin: 0 auto;
+        z-index: 1000;
+        backdrop-filter: blur(8px);
+        transition: all 0.2s ease;
+      }
+      
+      .navbar-title-glided {
+        visibility: visible;
+      }
+      
+      app {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+      }
+
+      .libsnframes-title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.2s ease;
+      }
+      
+      .libsnframes-title-glided {
+        position: fixed;
+        top: 6.5px;
+        transform: translateX(-265%);
+        font-size: 16px;
+        font-weight: bold;
+        width: auto;
+        z-index: 1001;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar"><strong style="color: #00000000"> Libs&Frames </strong></div>
+    <app>
+        <h1 class="libsnframes-title">Libs&Frames</h1>
+    </app>
+    <script>
+    
+    </script>
+    <script>
+    const title = document.querySelector('.libsnframes-title');
+    const navbar = document.querySelector('.nav-bar');
+    const triggerPoint = title.offsetTop;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= triggerPoint - 10) {
+        title.classList.add('libsnframes-title-glided');
+        navbar.classList.add('navbar-title-glided');
+      } else {
+        title.classList.remove('libsnframes-title-glided');
+        navbar.classList.remove('navbar-title-glided');
+      }
+    });
+  </script>
+  </body>
+</html>
