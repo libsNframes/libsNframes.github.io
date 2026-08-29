@@ -54,27 +54,52 @@
         width: auto;
         z-index: 1001;
       }
+      
+      .libsnframes-title-subtitle {
+        visibility: visible;
+        font-size: 12.5px;
+        position: absolute;
+        left: 50%;
+        font-weight: 300;
+        color: #00000077;
+        transform: translateX(-50%)translateY(275%);
+        transition: all 0.2s ease;
+      }
+      
+      .libsnframes-title-subtitle-glided {
+        visibility: hidden;
+        position: fixed;
+        top: 26px;
+        transform: translateX(-300%);
+        font-size: 6.25px;
+        width: auto;
+        z-index: 1001;
+      }
     </style>
   </head>
   <body>
     <div class="nav-bar"><strong style="color: #00000000"> Libs&Frames </strong></div>
     <app>
         <h1 class="libsnframes-title">Libs&Frames</h1>
+        <h3 class="libsnframes-title-subtitle">Free libraries and frameworks</h3>
     </app>
     <script>
     
     </script>
     <script>
     const title = document.querySelector('.libsnframes-title');
+    const titlesubtitle = document.querySelector('.libsnframes-title-subtitle');
     const navbar = document.querySelector('.nav-bar');
     const triggerPoint = title.offsetTop;
 
     window.addEventListener('scroll', () => {
       if (window.scrollY >= triggerPoint - 10) {
         title.classList.add('libsnframes-title-glided');
+        titlesubtitle.classList.add('libsnframes-title-subtitle-glided');
         navbar.classList.add('navbar-title-glided');
       } else {
         title.classList.remove('libsnframes-title-glided');
+        titlesubtitle.classList.remove('libsnframes-title-subtitle-glided');
         navbar.classList.remove('navbar-title-glided');
       }
     });
