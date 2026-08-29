@@ -1,8 +1,8 @@
 {
-  "name": "Libs N' Frames",
-  "short_name": "Libs & Frames",
+  "name": "Libs & Frames",
+  "short_name": "Libs&Frames",
   "description": "A collection of libraries and frameworks.",
-  "start_url": "./webapp-KJhHGDhdDJHDUjen.html",
+  "start_url": "./webapp-JtHBuRjdoiNstemC.html",
   "display": "standalone",
   "display_override": ["window-controls-override"],
   "background_color": "#ffffff",
