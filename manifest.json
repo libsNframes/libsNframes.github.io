@@ -5,8 +5,8 @@
   "start_url": "./webapp-JtHBuRjdoiNstemC.html",
   "display": "standalone",
   "display_override": ["window-controls-override"],
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa",
   "icons": [
     {
       "src": "img/icon-192x192.png",
